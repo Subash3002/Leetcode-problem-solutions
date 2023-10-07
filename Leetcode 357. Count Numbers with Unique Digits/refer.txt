@@ -1,0 +1,18 @@
+Finding distinct digits:
+
+Count 1-digit, 2-digit, and 3-digit numbers separately.
+1-digit integers: 1, ..., 9 - there are 9 integers.
+2-digit integers: 10, ..., 99 - there are 90 integers, but in 9 of them (11, ..., 99) the
+two digits are the same. So there are 90 − 9 = 81 2-digit integers with distinct digits.
+Another way to get this answer is to consider the number of possibilities for each digit:
+the first digit can be any non-zero digit, so it has 9 choices. The second digit can be any
+digit except equal to the first one, so it has 9 choices too. There are 9 · 9 = 81 choices
+total
+
+3-digit integers: 100, ..., 999 - there are 900 integers total, but some of them have a
+repeating digit... The number of 3-digit integers with distinct digits can be counted as
+follows: the first digit can be any non-zero digit, so it has 9 choices. The second digit
+can be any digit except equal to the first one, so it has 9 choices too. Finally, the third
+digit can be any digit except equal to the first digit or the second digit, so it has 8
+choices. There are 9 · 9 · 8 = 648 choices total.
+So there are 9 + 81 + 648 = 738 positive integers less than 1000 wit distinct digits.
